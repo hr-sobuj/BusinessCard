@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="3dp"
+    android:background="@drawable/border_blue"
+    tools:context=".MainActivity">
+
+<!--//first layer-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <!--//second layer-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:background="@color/black">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:weightSum="2"
+    android:background="@color/white">
+
+<!--START SECTION ONE-->
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="2"
+      android:padding="10dp"
+      android:orientation="horizontal">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="15dp"
+
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Habibur Rahman Sobuj"
+              android:textSize="20dp"
+              android:textColor="@color/black"
+              android:textAllCaps="true"
+              android:textStyle="bold"
+              android:fontFamily="@font/righteous_regular"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Co-founder and CEO"
+              android:fontFamily="@font/righteous_regular"
+              android:textSize="15dp"
+              android:textColor="@color/black"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Triangle Lab"
+              android:fontFamily="@font/righteous_regular"
+              android:textSize="15dp"
+              android:textColor="@color/black"/>
+
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="0dp"
+          android:orientation="vertical">
+
+
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="90dp"
+              android:layout_height="90dp"
+              android:layout_marginLeft="0dp"
+              android:elevation="6dp"
+              android:src="@drawable/sobuj24"
+              app:civ_border_color="#000"
+              app:civ_border_width="2dp"
+              android:padding="0dp"
+              android:layout_gravity="center|top"
+              android:gravity="end|top"/>
+
+
+
+      </LinearLayout>
+
+  </LinearLayout>
+<!--END SECTION ONE-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#000">
+
+</LinearLayout>
+<!--START SECTION TWO-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://sobujhstu.github.io/sobuj"
+                android:textSize="17dp"
+                android:drawableLeft="@drawable/website"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textFontWeight="700"
+                android:textStyle="normal"
+                android:fontFamily="@font/nunito_regular"
+
+                />
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+8801797972527"
+                android:textSize="17dp"
+                android:drawableLeft="@drawable/call"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textFontWeight="700"
+                android:textStyle="normal"
+                android:fontFamily="@font/nunito_regular"
+                />
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sobujhd@gmail.com"
+                android:textSize="17dp"
+                android:drawableLeft="@drawable/mail"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textFontWeight="700"
+                android:textStyle="normal"
+                android:fontFamily="@font/nunito_regular"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+          <!--  <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/signature"
+                android:padding="0dp"
+                android:layout_gravity="end|top"
+                android:gravity="end|top"
+                />-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/logo4"
+                android:padding="0dp"
+                android:layout_gravity="end|top"
+                android:gravity="end|top"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--END SECTION TWO-->
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
